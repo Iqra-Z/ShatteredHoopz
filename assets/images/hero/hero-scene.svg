@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0a0a0b"/>
+    <stop offset="55%" stop-color="#16151a"/>
+    <stop offset="100%" stop-color="#0a0a0b"/>
+  </linearGradient>
+  <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ff6a1a" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ff6a1a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#f5b942" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#f5b942" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1c1a17" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#0a0a0b"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1180" cy="230" r="420" fill="url(#glow1)"/>
+<circle cx="300" cy="150" r="300" fill="url(#glow2)"/>
+
+<!-- distant skyline silhouette -->
+<g fill="#141317" opacity="0.9">
+  <rect x="0" y="520" width="120" height="220"/>
+  <rect x="110" y="470" width="90" height="270"/>
+  <rect x="1420" y="500" width="100" height="240"/>
+  <rect x="1500" y="440" width="100" height="300"/>
+</g>
+
+<!-- court floor -->
+<rect x="0" y="700" width="1600" height="200" fill="url(#floor)"/>
+<ellipse cx="1180" cy="700" rx="520" ry="26" fill="#2a2620" opacity="0.55"/>
+<path d="M700 700 L560 900 M1100 700 L1260 900 M900 700 L900 900" stroke="#2c2a26" stroke-width="3" opacity="0.5"/>
+<path d="M400 760 Q900 730 1500 770" stroke="#3a352c" stroke-width="4" fill="none" opacity="0.5"/>
+
+<!-- hoop + backboard, right side -->
+<g transform="translate(1180,180)">
+  <rect x="-8" y="-140" width="16" height="300" fill="#0c0c0d"/>
+  <rect x="-90" y="-150" width="180" height="110" rx="4" fill="#151517" stroke="#2c2a26" stroke-width="4"/>
+  <rect x="-64" y="-124" width="128" height="58" fill="none" stroke="#3a352c" stroke-width="3"/>
+  <ellipse cx="0" cy="-38" rx="46" ry="10" fill="none" stroke="#ff6a1a" stroke-width="6"/>
+  <path d="M-46 -38 L-30 30 M-28 -39 L-16 34 M-10 -40 L-4 36 M10 -40 L4 36 M28 -39 L16 34 M46 -38 L30 30"
+        stroke="#e9e5da" stroke-width="2" opacity="0.75" fill="none"/>
+  <path d="M-40 -14 L28 -18 M-36 4 L24 -2 M-30 20 L18 12" stroke="#e9e5da" stroke-width="1.6" opacity="0.6" fill="none"/>
+</g>
+
+<!-- floodlight beam, upper right -->
+<g opacity="0.5">
+  <polygon points="1560,40 1300,40 1180,420 1560,420" fill="#fff7e8" opacity="0.05"/>
+  <circle cx="1560" cy="40" r="10" fill="#fff7e8"/>
+</g>
+
+<!-- oversized faint numeral watermark for editorial texture -->
+<text x="120" y="640" font-family="Arial, sans-serif" font-weight="900" font-size="520" fill="#151418" opacity="0.7">23</text>
+
+<!-- basketball resting on the floor, lower right of hoop -->
+<g transform="translate(1080,660)">
+  <ellipse cx="0" cy="86" rx="70" ry="14" fill="#000" opacity="0.5"/>
+  <circle cx="0" cy="0" r="72" fill="#b8500f"/>
+  <circle cx="0" cy="0" r="72" fill="url(#glow1)" opacity="0.4"/>
+  <path d="M-72 0 H72 M0 -72 V72 M-50 -50 C -20 -20 -20 20 -50 50 M50 -50 C 20 -20 20 20 50 50"
+        stroke="#2a1206" stroke-width="4" fill="none" opacity="0.8"/>
+</g>
+
+<!-- light rays -->
+<g opacity="0.12">
+  <polygon points="1560,20 1180,180 1560,340" fill="#fff7e8"/>
+</g>
+
+<!-- subtle basketball court key arc bottom-left -->
+<path d="M0 900 A 260 260 0 0 1 260 700" fill="none" stroke="#2c2a26" stroke-width="3" opacity="0.4"/>
+<path d="M-40 900 A 420 420 0 0 1 420 620" fill="none" stroke="#211f1b" stroke-width="2" opacity="0.35"/>
+</svg>

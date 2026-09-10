@@ -1,0 +1,40 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+
+    <defs>
+      <radialGradient id="spotlight" cx="50%" cy="38%" r="65%">
+        <stop offset="0%" stop-color="#3a3b40" stop-opacity="0.9"/>
+        <stop offset="55%" stop-color="#222328" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#111114" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sheenV" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+        <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.22"/>
+      </linearGradient>
+      <linearGradient id="sheenD" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+      </linearGradient>
+    </defs>
+    
+<ellipse cx="200" cy="200" rx="190" ry="190" fill="url(#spotlight)"/>
+<ellipse cx="205" cy="345" rx="105" ry="16" fill="#000000" opacity="0.35"/>
+
+    <g transform="translate(0,4)">
+      <path d="M118 96 C118 58 152 30 200 30 C248 30 282 58 282 96 L316 118 L300 168 L272 150 V300 A14 14 0 0 1 258 314 H142 A14 14 0 0 1 128 300 V150 L100 168 L84 118 Z"
+            fill="#f3ead9" stroke="#111114" stroke-width="5"/>
+      <path d="M150 66 C160 96 240 96 250 66" fill="none" stroke="#111114" stroke-width="5"/>
+      <path d="M128 150 V300 A14 14 0 0 0 142 314 H258 A14 14 0 0 0 272 300 V150" fill="url(#sheenV)"/>
+      <path d="M160 230 Q200 258 240 230 L240 275 Q200 296 160 275 Z" fill="#111114" opacity="0.28"/>
+      <path d="M182 100 Q200 112 218 100" fill="none" stroke="#111114" stroke-width="4" opacity="0.6" stroke-linecap="round"/>
+      <text x="200" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="10.5" letter-spacing="1.6" fill="#242424" opacity="0.95">SHATTERED HOOPZ</text>
+      
+    <g transform="translate(200,225) scale(1.15)" fill="none" stroke="#242424" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
+      <ellipse cx="0" cy="-18" rx="22" ry="7"/>
+      <path d="M-22 -18 L-15 24 M-11 -19 L-7 26 M0 -19 L0 27 M11 -19 L7 26 M22 -18 L15 24"/>
+      <path d="M-19 -6 L15 -8 M-18 4 L13 2 M-16 14 L10 12"/>
+    </g>
+    
+    </g>
+    
+</svg>

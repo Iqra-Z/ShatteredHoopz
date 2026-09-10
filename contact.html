@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shattered Hoopz</title>
+  <meta name="description" content="Get in touch with Shattered Hoopz — a portfolio ecommerce demo project.">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" data-site-header>
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Shattered Hoopz home">SHATTERED <span>HOOPZ</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-menu" data-nav-menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <div class="nav-search">
+          <button type="button" class="nav-search__toggle" data-search-toggle aria-expanded="false" aria-label="Search products">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <form class="nav-search__form" data-search-form>
+            <label for="nav-search-input" class="visually-hidden">Search products</label>
+            <input id="nav-search-input" type="search" placeholder="Search products…">
+          </form>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="View cart" data-cart-icon>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" data-cart-count>0</span>
+        </a>
+        <button class="nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Contact Us</h1>
+        <p>Questions, feedback, or collab ideas — send a message below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div>
+          <form data-contact-form novalidate>
+            <div class="form-field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" required aria-describedby="err-name">
+              <p class="field-error" id="err-name" data-error-for="name" data-message="Please enter your name."></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" required aria-describedby="err-email">
+              <p class="field-error" id="err-email" data-error-for="email" data-message="Please enter a valid email address."></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Subject</label>
+              <input id="contact-subject" name="subject" type="text" required aria-describedby="err-subject">
+              <p class="field-error" id="err-subject" data-error-for="subject" data-message="Please add a subject."></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required aria-describedby="err-message"></textarea>
+              <p class="field-error" id="err-message" data-error-for="message" data-message="Please write a short message."></p>
+            </div>
+            <p class="form-note">This demo form is for portfolio demonstration purposes — no message is actually sent.</p>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+
+          <div class="contact-success" data-contact-success hidden tabindex="-1">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+            <h3>Message Sent</h3>
+            <p>Thanks for reaching out — this is a demo confirmation, no real message was delivered.</p>
+          </div>
+        </div>
+
+        <aside class="contact-info">
+          <h3 style="margin-bottom:1.25rem;">Details</h3>
+          <ul>
+            <li><div><strong>Email</strong><span>hello@shatteredhoopz.demo</span></div></li>
+            <li><div><strong>Response Time</strong><span>This is a static portfolio demo — form submissions aren't monitored.</span></div></li>
+            <li><div><strong>Follow</strong><span>Find links to the developer's real profiles in the footer.</span></div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">SHATTERED <span>HOOPZ</span></p>
+          <p>Basketball culture and streetwear, built for everyday movement.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h4l-8.5 9.7L23 22h-6.9l-5.4-6.6L4.5 22H0.5l9.1-10.4L1 2h7l4.9 6z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2h3.2c.3 2 1.7 3.6 4.8 3.8V9c-1.7 0-3.3-.5-4.6-1.4v7.2A6.6 6.6 0 1 1 10.8 8v3.4a3.2 3.2 0 1 0 2.2 3V2Z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8.5v7l6-3.5Z"/><path d="M23 12s0-3.6-.46-5.3a3 3 0 0 0-2.1-2.1C18.7 4 12 4 12 4s-6.7 0-8.44.6a3 3 0 0 0-2.1 2.1C1 8.4 1 12 1 12s0 3.6.46 5.3a3 3 0 0 0 2.1 2.1C5.3 20 12 20 12 20s6.7 0 8.44-.6a3 3 0 0 0 2.1-2.1C23 15.6 23 12 23 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=jerseys">Jerseys</a></li>
+            <li><a href="shop.html?category=hoodies">Hoodies</a></li>
+            <li><a href="shop.html?category=hats">Hats</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Developer</h4>
+          <ul>
+            <li><a href="https://iqrazahid.netlify.app" target="_blank" rel="noopener">Portfolio</a></li>
+            <li><a href="https://github.com/Iqra-Z" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/iqrazahid" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Shattered Hoopz. Designed &amp; developed by <a href="https://iqrazahid.netlify.app" target="_blank" rel="noopener">Iqra Zahid</a>.</p>
+        <p>Portfolio demo — simulated checkout, no real payments processed.</p>
+      </div>
+      <p class="footer-note">Shattered Hoopz is an independent, non-commercial portfolio project and is not affiliated with or endorsed by the NBA, Nike, or any sports team or league.</p>
+    </div>
+  </footer>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+
+    <defs>
+      <radialGradient id="spotlight" cx="50%" cy="38%" r="65%">
+        <stop offset="0%" stop-color="#3a3b40" stop-opacity="0.9"/>
+        <stop offset="55%" stop-color="#222328" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#111114" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sheenV" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+        <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.22"/>
+      </linearGradient>
+      <linearGradient id="sheenD" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+      </linearGradient>
+    </defs>
+    
+<ellipse cx="200" cy="200" rx="190" ry="190" fill="url(#spotlight)"/>
+<ellipse cx="205" cy="345" rx="105" ry="16" fill="#000000" opacity="0.35"/>
+
+    <g transform="translate(0,10)">
+      <path d="M140 60 L110 78 L78 108 L104 138 L128 118 V300 A10 10 0 0 0 138 310 H262 A10 10 0 0 0 272 300 V118 L296 138 L322 108 L290 78 L260 60 H230 A30 30 0 0 1 170 60 Z"
+            fill="#c2410c" stroke="#f3ead9" stroke-width="5"/>
+      <path d="M170 60 A30 30 0 0 0 230 60" fill="none" stroke="#f3ead9" stroke-width="5"/>
+      <path d="M128 118 V300 A10 10 0 0 0 138 310 H262 A10 10 0 0 0 272 300 V118" fill="url(#sheenV)"/>
+      <path d="M104 138 L128 118 V145 L108 163 Z" fill="#f3ead9" opacity="0.9"/>
+      <path d="M296 138 L272 118 V145 L292 163 Z" fill="#f3ead9" opacity="0.9"/>
+      <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="12.5" letter-spacing="2.5" fill="#f6f3ec" opacity="0.95">SHATTERED HOOPZ</text>
+      <text x="200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="70" fill="#f6f3ec" opacity="0.95">23</text>
+    </g>
+    
+</svg>

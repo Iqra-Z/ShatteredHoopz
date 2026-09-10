@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Shattered Hoopz</title>
+  <meta name="description" content="Browse the full Shattered Hoopz catalog — jerseys, hoodies, hats, tees, and accessories. Filter, search, and sort the collection.">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" data-site-header>
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Shattered Hoopz home">SHATTERED <span>HOOPZ</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-menu" data-nav-menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <div class="nav-search">
+          <button type="button" class="nav-search__toggle" data-search-toggle aria-expanded="false" aria-label="Search products">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <form class="nav-search__form" data-search-form>
+            <label for="nav-search-input" class="visually-hidden">Search products</label>
+            <input id="nav-search-input" type="search" placeholder="Search products…">
+          </form>
+        </div>
+        <a href="cart.html" class="cart-link" aria-label="View cart" data-cart-icon>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" data-cart-count>0</span>
+        </a>
+        <button class="nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">The Catalog</p>
+        <h1>Shop the Collection</h1>
+        <p>Jerseys, hoodies, hats, tees, shorts, and accessories — filter by category, search, or sort.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="shop-toolbar">
+          <div class="filter-group" role="group" aria-label="Filter by category">
+            <button type="button" class="filter-btn" data-shop-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-shop-filter="jerseys" aria-pressed="false">Jerseys</button>
+            <button type="button" class="filter-btn" data-shop-filter="hoodies" aria-pressed="false">Hoodies</button>
+            <button type="button" class="filter-btn" data-shop-filter="hats" aria-pressed="false">Hats</button>
+            <button type="button" class="filter-btn" data-shop-filter="tees" aria-pressed="false">Tees</button>
+            <button type="button" class="filter-btn" data-shop-filter="shorts" aria-pressed="false">Shorts</button>
+            <button type="button" class="filter-btn" data-shop-filter="accessories" aria-pressed="false">Accessories</button>
+          </div>
+          <div class="shop-controls">
+            <label for="shop-search" class="visually-hidden">Search products</label>
+            <input id="shop-search" type="search" placeholder="Search products…" data-shop-search>
+            <label for="shop-sort" class="visually-hidden">Sort products</label>
+            <select id="shop-sort" data-shop-sort>
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="shop-count" data-shop-count></p>
+
+        <div class="grid grid--products" data-shop-grid></div>
+
+        <div class="empty-state" data-shop-empty hidden>
+          <h3>No products match your filters</h3>
+          <p>Try a different category or clear your search.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">SHATTERED <span>HOOPZ</span></p>
+          <p>Basketball culture and streetwear, built for everyday movement.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h4l-8.5 9.7L23 22h-6.9l-5.4-6.6L4.5 22H0.5l9.1-10.4L1 2h7l4.9 6z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2h3.2c.3 2 1.7 3.6 4.8 3.8V9c-1.7 0-3.3-.5-4.6-1.4v7.2A6.6 6.6 0 1 1 10.8 8v3.4a3.2 3.2 0 1 0 2.2 3V2Z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8.5v7l6-3.5Z"/><path d="M23 12s0-3.6-.46-5.3a3 3 0 0 0-2.1-2.1C18.7 4 12 4 12 4s-6.7 0-8.44.6a3 3 0 0 0-2.1 2.1C1 8.4 1 12 1 12s0 3.6.46 5.3a3 3 0 0 0 2.1 2.1C5.3 20 12 20 12 20s6.7 0 8.44-.6a3 3 0 0 0 2.1-2.1C23 15.6 23 12 23 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=jerseys">Jerseys</a></li>
+            <li><a href="shop.html?category=hoodies">Hoodies</a></li>
+            <li><a href="shop.html?category=hats">Hats</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Developer</h4>
+          <ul>
+            <li><a href="https://iqrazahid.netlify.app" target="_blank" rel="noopener">Portfolio</a></li>
+            <li><a href="https://github.com/Iqra-Z" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/iqrazahid" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Shattered Hoopz. Designed &amp; developed by <a href="https://iqrazahid.netlify.app" target="_blank" rel="noopener">Iqra Zahid</a>.</p>
+        <p>Portfolio demo — simulated checkout, no real payments processed.</p>
+      </div>
+      <p class="footer-note">Shattered Hoopz is an independent, non-commercial portfolio project and is not affiliated with or endorsed by the NBA, Nike, or any sports team or league.</p>
+    </div>
+  </footer>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/shop.js"></script>
+</body>
+</html>

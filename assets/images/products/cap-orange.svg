@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+
+    <defs>
+      <radialGradient id="spotlight" cx="50%" cy="38%" r="65%">
+        <stop offset="0%" stop-color="#3a3b40" stop-opacity="0.9"/>
+        <stop offset="55%" stop-color="#222328" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#111114" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sheenV" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+        <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.22"/>
+      </linearGradient>
+      <linearGradient id="sheenD" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+      </linearGradient>
+    </defs>
+    
+<ellipse cx="200" cy="200" rx="190" ry="190" fill="url(#spotlight)"/>
+<ellipse cx="205" cy="345" rx="105" ry="16" fill="#000000" opacity="0.35"/>
+
+    <g transform="translate(20,20)">
+      <path d="M96 220 C96 148 140 98 200 98 C260 98 304 148 304 220 H96 Z" fill="#1b1c20" stroke="#000" stroke-opacity="0.15" stroke-width="2"/>
+      <path d="M96 220 C96 148 140 98 200 98 C260 98 304 148 304 220" fill="url(#sheenD)"/>
+      <path d="M200 98 V220" stroke="#000" stroke-opacity="0.18" stroke-width="3"/>
+      <path d="M152 102 V216 M248 102 V216" stroke="#000" stroke-opacity="0.12" stroke-width="2"/>
+      <path d="M96 220 Q94 236 60 246 Q20 258 -4 252 Q6 234 30 222 Q60 208 96 208 Z" fill="#c2410c" stroke="#000" stroke-opacity="0.15" stroke-width="2"/>
+      <path d="M96 220 Q94 236 60 246" fill="none" stroke="#000" stroke-opacity="0.2" stroke-width="2"/>
+      <text x="210" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#ff6a1a" opacity="0.95">SH</text>
+      <circle cx="200" cy="96" r="7" fill="#1b1c20" stroke="#000" stroke-opacity="0.2"/>
+    </g>
+    
+</svg>
