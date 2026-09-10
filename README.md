@@ -1,5 +1,9 @@
 # Shattered Hoopz
 
+<p align="center">
+  <img src="assets/images/README/shattered-hoopz-preview.png" alt="Shattered Hoopz Ecommerce Store" width="100%">
+</p>
+
 **Interactive Basketball Streetwear Ecommerce Experience**
 
 A frontend ecommerce demo built with vanilla HTML, CSS, and JavaScript — a full product catalog, category/search/sort filtering, a persistent shopping cart, a quick-view modal, wishlist, and a simulated checkout flow, styled as an original basketball/streetwear brand.
